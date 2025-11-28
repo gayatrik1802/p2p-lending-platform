@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>P2P Lending</title>
+  <script src="web3.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <h2>P2P Lending Platform</h2>
+
+  <button onclick="connectWallet()">Connect MetaMask</button>
+
+  <h3>Create Loan</h3>
+  Amount (ETH): <input id="loanAmount" />
+  Interest (ETH): <input id="loanInterest" />
+  <button onclick="createLoan()">Create</button>
+
+  <h3>Fund Loan</h3>
+  Loan ID: <input id="fundLoanId" />
+  <button onclick="fundLoan()">Fund</button>
+
+  <h3>Repay Loan</h3>
+  Loan ID: <input id="repayLoanId" />
+  <button onclick="repayLoan()">Repay</button>
+
+  <h3>Withdraw</h3>
+  Loan ID: <input id="withdrawLoanId" />
+  <button onclick="withdrawLoan()">Withdraw</button>
+</body>
+</html>
